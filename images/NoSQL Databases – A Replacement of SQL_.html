@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://www.arielsoftwares.com/NoSQL-Databases.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="https://www.arielsoftwares.com/img/favicon.png" type="img/favicon.png">
+    <link href="./NoSQL Databases – A Replacement of SQL__files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./NoSQL Databases – A Replacement of SQL__files/all.css">
+    <link rel="stylesheet" href="./NoSQL Databases – A Replacement of SQL__files/bootstrap.min.css">
+    <link href="./NoSQL Databases – A Replacement of SQL__files/animation.css" rel="stylesheet" type="text/css">
+    <link href="./NoSQL Databases – A Replacement of SQL__files/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="./NoSQL Databases – A Replacement of SQL__files/custom.css" rel="stylesheet" type="text/css">
+    <title>NoSQL Databases – A Replacement of SQL?</title>
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./NoSQL Databases – A Replacement of SQL__files/analytics.js"></script><script async="" src="./NoSQL Databases – A Replacement of SQL__files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73470200-1');
+</script>
+<script>
+    $('form').on('submit', function (e) {
+        var response = grecaptcha.getResponse();
+        debugger;
+        //recaptcha failed validation
+        if (response.length == 0) {
+            e.preventDefault();
+            alert("reCaptcha is Not Valid");
+        }
+            //recaptcha passed validation
+        else {
+            //  $('#recaptcha-error').hide();
+        }
+        if (e.isDefaultPrevented()) {
+            return false;
+        } else {
+            return true;
+        }
+    });
+
+</script>
+<meta name="google-site-verification" content="LJEAOVron-mc7LqR5xO2HqhuAj8hcMo2d3DlFW2xcl4">		
+</head>
+
+<body id="scroll_body">
+    <header class="header blog_dtail_head">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://www.arielsoftwares.com/index.html"><img src="./NoSQL Databases – A Replacement of SQL__files/logo_white.png" alt=""></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn" href="https://www.arielsoftwares.com/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.arielsoftwares.com/NoSQL-Databases.html#"><span onclick="openNav()">☰ </span></a>
+                    </li>
+                </ul>
+            </nav>
+			<div class="bread-crumb blog_breadcrumb">
+				<nav>
+				  <ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="https://www.arielsoftwares.com/index.html">Home</a></li>
+					<li class="breadcrumb-item"><a href="https://www.arielsoftwares.com/blog.html">Blog</a></li>
+					<li class="breadcrumb-item active" aria-current="page">NoSQL Databases</li>
+				  </ol>
+				</nav>
+			</div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="container">
+            <div class="main_menu">
+                <div class="row">
+				<div class="col-md-8 visible-xs text-center">
+						<div class="menu_logo d-flex align-items-center">
+							<div class="menu_bnr">
+								<a href="https://www.arielsoftwares.com/index.html" title=""><img src="./NoSQL Databases – A Replacement of SQL__files/logo_white.png" alt=""></a>
+							</div>								
+						</div>
+					</div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-4 col-6">
+                                <a class="menu_link green_bg service_scroll" onclick="closeNav()" href="https://www.arielsoftwares.com/index.html#service" title=""><span><i class="fas fa-laptop"></i></span>Services</a>
+                            </div>
+                            <div class="col-md-4 col-6">
+								<a class="menu_link red_bg" href="https://www.arielsoftwares.com/about-us.html" title=""><span><i class="fas fa-users"></i></span>About Us</a>                                
+                            </div>
+                            <div class="col-md-4">
+                                <a class="menu_link glry_bg bluLight_bg" href="https://www.arielsoftwares.com/portfolio.html" title=""><span><i class="fas fa-briefcase"></i></span>Portfolio</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 glry_mobile">
+                                <a class="menu_link brown_bg" href="https://www.arielsoftwares.com/gallery.html" title=""><span><i class="far fa-image"></i></span>Gallery</a>
+                                <a class="menu_link cyan_bg" href="https://www.arielsoftwares.com/blog.html" title=""><span><i class="fab fa-blogger-b"></i></span>Blog</a>
+                            </div>
+                            <div class="col-md-8 hidden-xs text-center">
+                                <div class="menu_logo d-flex align-items-center">
+                                   <div class="menu_bnr">
+									<a href="https://www.arielsoftwares.com/index.html" title=""><img src="./NoSQL Databases – A Replacement of SQL__files/ariel_logo.png" alt=""></a>
+									<div class="social_menu">
+										<a href="https://www.facebook.com/Ariel-Software-Solutions-Pvt-Ltd-258352097520426/" target="_blank">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a href="https://twitter.com/arielsoftwares" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a href="skype:ariel.bizz?chat" target="_blank">
+											<i class="fab fa-skype"></i>
+										</a>
+										<a href="https://www.linkedin.com/company/ariel-software-solutions" target="_blank">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+										<a href="https://www.youtube.com/channel/UCmVP91EvmPt-LYfRi6mTbPg" target="_blank">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</div>
+								</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 glry_mobile">
+                        <div class="contact_menu">
+                            <a class="menu_link yellow_bg d-flex align-items-center" href="https://www.arielsoftwares.com/solutions.html" title=""><b><span><i class="far fa-lightbulb"></i></span>Solutions</b></a>
+                        </div>
+						<div class="contact_menu">
+							<a class="menu_link lightgreen_bg d-flex align-items-center" href="https://www.arielsoftwares.com/career.html" title=""><b><span><i class="fas fa-code"></i></span>Career</b></a>
+						</div>
+                        <div class="contact_menu">
+                            <a class="menu_link pink_bg d-flex align-items-center" href="https://www.arielsoftwares.com/contact-us.html" title=""><b><span><i class="fas fa-mobile-alt"></i></span>Contact Us</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---  call us form ---->
+<button type="button" class="btn call_us-txt" data-toggle="modal" data-target="#exampleModalCenter2">
+<img src="./NoSQL Databases – A Replacement of SQL__files/NKvM.gif"></button>
+
+<div class="modal fade quote_modal callUs_modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header quote_detail2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body call-modalus text-center">
+        <h5>Let’s hear about your idea</h5>
+		<h2 class="our_head text-center">Call Us or Whatsapp At</h2>
+		<a href="tel:+91-869-924-0692">
+			<img src="./NoSQL Databases – A Replacement of SQL__files/call_gif.gif" class="gif_call">+91-8699240692
+		</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <section class="banner about_banner blog_banner blog_singlebanner">
+    </section>
+
+    <section class="our_Blog single_blog">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <div class="single_blgimg noSQLDatabasesBlog blog-fix">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="single_contnbox noSQL_contnbox">
+                    <h2 class="blog_singlehead mb-2">NoSQL Databases – A Replacement of SQL?</h2>
+                    <div class="bloggers_name">
+                        <div class="media pt-5 align-items-center">
+                            <div class="blogger_img mr-3 rounded-circle">
+								<img src="./NoSQL Databases – A Replacement of SQL__files/NoSQL_blog.jpg" alt="NoSQL Databases">
+							</div>
+                            <div class="media-body">
+                                <p class="singleblog_nme">By Amrit Bhatia</p>
+                                <p class="singleblog_date">On July 07, 2020</p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="blog_descr">
+                            <p>A genuine and considerable question that comes in our mind when we hear about NoSQL databases is <b>“Would it put back our all-time favourite SQL databases?”</b> If no, then in what circumstances we need to play with our favouritism for SQL - 'The King of databases with unanimous consent'? We all deserve to know this with logic rather than just accepting it with mob mentality. And for understanding it completely, we will also have to duly acknowledge the snags that we hit while working with SQL databases along with their precedence accepted unanimously.</p>
+                            <p>Let’s first cast a brief look at the structure, features and foibles of both type of databases to understand the choice of database for an application.</p>
+                            <p><span class="headingBlue">SQL Databases:</span> The most popular and standard design for the daily needs of most businesses for decades have been SQL databases which are also known as <b>Relational Databases.</b> These databases model data in tabular relations and use Structured Query Language to communicate with data. SQL is the standard for database interoperability and is the foundation for all of the popular database applications available today, from Access to Oracle.</p>
+                            <p>These are useful for handling structured data that organizes elements of data and standardizes how they relate to one another and to different properties. The Relational database model is implemented in many database products either using a SQL database for processing or SQL statements for requests and database updates. These databases extend from small, desktop systems to huge cloud-based systems. They come in a variety of open source and internally supported systems, open source with commercial support systems, and commercial closed-source systems. Few of the most popular relational databases include Microsoft SQL Server, Oracle, MySQL, PostgreSQL and IBM DB2.</p>
+							<p><span class="headingBlue">NoSQL Databases:</span> The NoSQL databases which originally refer to <b>"Non-SQL"</b> or <b>"Non-Relational”</b> databases model data in non-tabular relations and use more flexible data models. These databases are designed to be used across large distrusted systems.</p>
+							<p>These are useful for managing unstructured data and can store data in any record in a schema-less or free-form fashion. NoSQL databases follow four common models for storing data, which set up the four categories of NoSQL systems viz. Document databases, KeyValue Databases, Wide-column Databases, and Graph Databases. Let’s discuss them one by one</p>
+							<div class="blogDataDiv">
+								<div class="contentDiv">
+									<p><span class="headingBlue">Document Databases:</span> This type of NoSQL databases follows document storage model and stores data as a document in JSON or XML format. Since these databases do not need to have a schema and are quite flexible, these are easy to modify. These are a good option for the applications requiring the ability to store varying attributes along with large amounts of data and are mostly used for CMS systems, blogging platforms, real-time analytics and e-commerce applications. Most popular examples of Document based databases are MongoDB and CouchDB.</p>
+								</div>
+								<div class="imageDiv">
+									<img src="./NoSQL Databases – A Replacement of SQL__files/Document-Database.png">
+								</div>
+							</div>
+							<div class="blogDataDiv leftSideImg">
+								<div class="imageDiv">
+									<img src="./NoSQL Databases – A Replacement of SQL__files/Key-value.png">
+								</div>
+								<div class="contentDiv">
+									<p><span class="headingBlue">Key-Value Databases:</span> The Key-Value is quite simple in its type as it stores data as a dictionary or hash table where the key is the dictionary word, and the value is the definition of that word. Each key is unique, and the value can be in form of JSON, BLOB (Binary Large Objects) or string etc. These databases have no query language and provide a simple way to manage data. The simplicity of this model makes them fast, easy to use, scalable, portable, and flexible. These are a great choice for storing large amounts of data without a need to perform complex queries to retrieve it. Redis and DynanoDB are the most popular in this category.</p>
+								</div>
+							</div>
+							<div class="blogDataDiv">
+								<div class="contentDiv">
+									<p><span class="headingBlue">Wide-Column Databases:</span> A wide-column database is also known as <b>column-based database.</b> Similar to a relational database, it also stores data in tabular form with rows and columns but with a lot of flexibility as each row is not required to have the same columns. These databases club columns of related data together which can be retrieved in a single operation through a query</p>
+									<p>Wide-column databases are best to store large amounts of data with the idea of query patterns to be used. These are widely used to manage data warehouses, business intelligence, CRM, and Library Card Catalogues. Cassandra and HBase are two of the most popular databases of this type of NoSQL databases.</p>
+								</div>
+								<div class="imageDiv">
+									<img src="./NoSQL Databases – A Replacement of SQL__files/Wide-Column-Database.png">
+								</div>
+							</div>
+							<div class="blogDataDiv leftSideImg">
+								<div class="imageDiv">
+									<img src="./NoSQL Databases – A Replacement of SQL__files/Graph-Database.png">
+								</div>
+								<div class="contentDiv">
+									<p><span class="headingBlue">Graph Databases:</span> Graph based NoSQL databases store data in Nodes and Edges where nodes store information about entities and edges define relationship between nodes. Each node and edge has a unique identifier. Graph databases are multi-relational in nature and are best to use where various data connections need to be visualized and analysed for different patterns. This being the case, these are mostly used for social networks, fraud detection, logistics, network analysis, spatial data and recommendation engines. Examples of Graph databases include Neo4j, InfiniteGraph and JanusGraph.</p>
+								</div>
+							</div>
+							<div class="blogOtherData">
+								<h3>Which database to choose and when?</h3>
+								<p>Now, since we have discussed both types of databases with examples, we should be able to make a choice on database for any application to be developed. The advantages of both databases come with a price; be it low or high.</p>
+								<p>Though the conventional SQL (Relational) databases are well known for their consistency and reliability, proved with real-world stress testing, they fall short in performance due to their rigid schema and hence are less suitable for the applications striving for flexibility and high operational speed. On the other hand, NoSQL databases indisputably have come a long way with speed, global availability and scalability due to their flexible schema and support for unstructured data but they have compromised substantially with the ACID (Atomicity, Consistency, Isolation, and Durability) properties of a transaction.</p>
+								<p>Consequently, we need to <b>consider the following factors while selecting a SQL or NoSQL database:</b></p>
+								<p><span class="headingBlue">Data Structure:</span> The foremost element that can prove our choice of database “good” or “bad” is <b>what our data looks like.</b> If the <span class="lightBlueTxt">data is primarily structured and ACID compliance is must</span>, there is <span class="lightBlueTxt"> no better choice than a SQL database.</span> Being more consistent and ensuring data integrity with ACID properties, SQL databases are a great fit for heavy duty or complex transactions and hence for transaction-oriented systems like CRM tools, accounting software, and e-commerce platforms.</p>
+								<p>Alternatively, if the <span class="lightBlueTxt">data is not structured or we are not sure about the data requirements, NoSQL may be our <b>chalk horse </b></span> as it does not need a predefined schema. NoSQL facilitates storing all types of data together as and when needed.</p>
+								<p><span class="headingBlue">Data Query:</span>The next important factor to consider is the ability to query data, that is, <b>how frequently and swiftly we need to query our data.</b> Being well structured and organised, SQL databases are very friendly in querying even complex data whereas NoSQL databases are not much query-efficient and require extra processing on the data to run queries, which may prove to be costly. However, some Document based NoSQL databases like MongoDB and CouchDB do come with querying capabilities.</p>
+								<p><span class="headingBlue">Scaling:</span> Both SQL and NoSQL databases are highly scalable but they scale differently. So, our choice of database should be based on the <b>future growth of our data set.</b></p>
+								<p>The loyalty for the ACID properties confined the SQL databases to run on a single server and they scale vertically. It plainly means that in order to scale a SQL database, the capacity of a single server needs to be increased.</p>
+								<p>On the contrary, NoSQL databases scale horizontally which implies more servers can be added any time to reinforce the growing database.</p>
+								
+								<h3>Can both SQL &amp; NoSQL be merged?</h3>
+								<p>With this long discussion on the features and foibles of SQL and NoSQL databases, one question that is hitting my mind ceaselessly is – <b>“Is there a way to combine both the databases and get the maximum of them?”</b></p>
+								<p>Both types of databases have their own pros and cons and are specifically suitable for the systems of their kind. Though SQL is well established and has mass acceptance for all types of applications, many SQL databases have started adopting features of NoSQL databases to go with the varying technological needs. Accepting JSON documents as a native data type and performing queries against that data, and imposing constraints on JSON data are to name a few.</p>
+								<p>On the other hand, NoSQL databases are also embracing many knacks of conventional SQL databases along with adding SQL like query languages. For example, 2 document based NoSQL databases - MongoDB and RavenDB promise to be ACID compliant whereas MongoDB and CouchDB are as powerful in querying data as any relational database.</p>
+								<p><span class="headingBlue">Examples:</span> <b>MySQL Document Store,</b> an enhancement to the most popular open-source relational database MySQL, gives the provision to combine the SQL relational tables and schema-less JSON collections in the same database as well as the same application.</p>
+								<p><b>MongoDB,</b> one of the most popular NoSQL databases, offers multi-document ACID transactions. <b>DynamoDB,</b> another NoSQL database managed by AWS also provides ACIDcompliant transaction functionality</p>
+								<h3>Conclusion:</h3> Although NoSQL databases have made their presence felt with irrefutable features like flexibility, scalability and speed by following the BASE (Basic Availability, Soft State, Eventual consistency) consistency model, it has a long way to meet the inimitable features like consistency and reliability of SQL databases. NoSQL should actually be understood as <b>“Not Only SQL”</b> rather than “Non SQL” which means it does support SQL along with having a lot more features and it can in no way replace the traditional SQL databases. The choice purely stands on the requirements of data structure, query handling and scalability for an application.<p></p>
+							</div>
+							
+                            <p>Thanks!</p>
+                        </div>
+                    </div>
+                    <hr class="mt-4">
+                </div>
+
+            </div>
+        </div>
+
+        
+    </section>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="quick-links">
+					<ul class="links-vertical">
+						<li><a class="service_scroll" href="https://www.arielsoftwares.com/index.html#service">Services</a></li>
+						<li><a href="https://www.arielsoftwares.com/portfolio.html">Portfolio</a></li>
+						<li><a href="https://www.arielsoftwares.com/about-us.html">About Us</a></li>
+						<li><a href="https://www.arielsoftwares.com/gallery.html">Gallery</a></li>
+						<li><a href="https://www.arielsoftwares.com/career.html">Career</a></li>
+						<li><a href="https://www.arielsoftwares.com/contact-us.html">Contact Us</a></li>
+						<li><a href="https://www.arielsoftwares.com/blog.html">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="subscribe_secc">
+			<div class="">
+				<h4>Please subscribe to our <b>Newsletter</b></h4>
+				<form action="https://www.arielsoftwares.com/Subscribe.php" method="POST">
+					<div>
+						<div class="subscribe_btn disable_space">
+							<input class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="Email" placeholder="Enter Your Email" type="text" required="">
+							<input type="submit" value="Subscribe" name="subscribe" id="subscribe" class="action-btn btn">
+						</div>
+					</div>
+				</form> 
+			</div>
+		</div>
+		<div class="drawer">
+			<div class="box">
+				<a target="_blank" href="https://www.facebook.com/Ariel-Software-Solutions-Pvt-Ltd-258352097520426/" class="ball ball-1 facebook"><i class="fab fa-facebook-f"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/company/ariel-software-solutions" class="ball ball-2 linkedin"><i class="fab fa-linkedin-in"></i></a>
+				<a target="_blank" href="https://twitter.com/arielsoftwares" class="ball ball-3 twitter"><i class="fab fa-twitter"></i></a>
+				<a target="_blank" href="https://www.youtube.com/channel/UCmVP91EvmPt-LYfRi6mTbPg" class="ball  youtube ball-4"><i class="fab fa-youtube"></i></a>
+				<a href="skype:ariel.bizz?chat" class="ball ball-5 skype"><i class="fab fa-skype"></i></a>
+				
+			</div>
+			<div class="cover"><span></span></div>
+		</div>
+	</div>
+	<div class="copyright pull-center">
+		Copyright © 2020 All Rights Reserved. Designed &amp; Developed by Ariel Software Solutions Pvt. Ltd.
+	</div>
+</footer>
+<a href="https://www.arielsoftwares.com/NoSQL-Databases.html#scroll_body" title="" class="angle_down vert-move scroll_top scrollTop_btn"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="./NoSQL Databases – A Replacement of SQL__files/jquery.js"></script>
+
+    <script src="./NoSQL Databases – A Replacement of SQL__files/popper.min.js"></script>
+    <script src="./NoSQL Databases – A Replacement of SQL__files/bootstrap.min.js"></script>
+    <script src="./NoSQL Databases – A Replacement of SQL__files/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".angle_down").click(function(e) {
+                e.preventDefault();
+                var dest = $(this).attr('href');
+                $("html, body").animate({
+                    scrollTop: $(dest).offset().top
+                }, 1000);
+            });
+			$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+
+			if(scroll >= 500) {
+				$(".scroll_top").addClass("scrollTop_btn");
+			} else {
+				$(".scroll_top").removeClass("scrollTop_btn");
+			}
+		});
+        });
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script>
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 2,
+                    nav: true,
+                    //loop: false,
+                    margin: 0
+                }
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 150) {
+                $(".single_blgimg").addClass("blog-fix");
+            } else {
+                $(".single_blgimg").removeClass("blog-fix");
+            }
+        });
+    </script>
+	<script>
+$(document).on('keyup',function(evt) {
+		if (evt.keyCode == 27) {
+		   //alert('Esc key pressed.');
+		   $("#mySidenav").css("width", "0");
+		}
+	});
+</script>
+<script>
+$(".disable_space").on({
+  keydown: function(e) {
+    if (e.which === 32)
+      return false;
+  },
+  change: function() {
+    this.value = this.value.replace(/\s/g, "");
+  }
+});
+</script>
+
+
+
+<style type="text/css">.typewrite > .wrap { border-right: 0.08em solid #fff}</style></body></html>

@@ -1,0 +1,614 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Object-Oriented Information Systems (OOIS)</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+						</li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Object-Oriented Information Systems</h1><br>
+						<h3>Module 2</h3>
+					</header>
+
+					<span class="image main"><img src="../images/python.jpeg" alt="" /></span>
+
+					<p>Information systems are responsible for collecting, storing, processing and providing knowledge
+						about information from a range of sources. Information systems are an integrated set of
+						components that bring together hardware, software, networking, database storage as well as the
+						human process that may be involved.</p>
+					<p>These systems are integral to the products and services that we rely on as a society and as such
+						it is imperative that they are well-designed and developed. Object oriented design and
+						development provides a structured approach to creating sustainable and manageable solutions.</p>
+					<p>The module examines the different elements of an information system from design through to
+						processing and storage. You will explore the fundamental concepts behind object-oriented
+						development using UML as a tool for analysis and design. Further to this, we will make use of
+						Python to provide concrete experience of object-oriented development.</p>
+
+
+					<hr class="major" />
+					<h2>Information System Failure case study - Equifax data breach</h2>
+					<p>Equifax, which is one of the credit reporting agencies that assess the financial health of the
+						Americans, has breached personally identifying data of hundreds of millions people in March
+						2017. Lax security and corruption were the critics of Equifax being accused of in the aftermath.
+					</p>
+					<p><b>Brief reasons for the failure</b>
+					<ul>
+						<li>Due to failures in Equifax's internal processes, a widely known vulnerability in a consumer
+							complaint web portal was used by the hackers. The vulnerability should have been patched but
+							was
+							not because of the failures in Equifax's internal processes.</li>
+						<li>The information systems were not adequately segmented from one another, thus the attackers
+							were able to move from the web portal to other servers.</li>
+						<li>Since an encryption certificate on one of their internal security tools was failed to
+							renew, data was pulled out of the network in encrypted form which is undetected for months.
+						</li>
+					</ul>
+					</p>
+					<p><b>Impact of the failure</b>
+					<ul>
+						<li>143 million people was potentially affected</li>
+						<li>Personal information (names, addresses, dates of birth, Social Security numbers, drivers'
+							licenses numbers) of more than 40% of the population of the United States was exposed</li>
+						<li>The upper ranks of Equifax's C-suite rapidly turned over</li>
+					</ul>
+					</p>
+					<p><b>Recommendations from Mandiant’s report (2017)</b>
+					<ul>
+						<li>reduce the scope of sensitive data retained in backend database</li>
+						<li>increase restrictions and controls for accessing data housed within critical databases</li>
+						<li>deploy additional web application firewalls and tuning signatures to block attacks</li>
+						<li>accelerate the deployment of file integrity monitoring technologies on application and web
+							servers</li>
+						<li>accelerate deployment of a privileged account management solution</li>
+						<li>enhance visibility for encrypted traffic by deploying additional inline network traffic
+							decryption capabilities</li>
+						<li>deploy additional endpoint detection and response agent technologies</li>
+					</ul>
+					</p>
+					<p><b>Human factor of the failure</b><br>
+						Not only the system or server structural vulnerability make it convenient for the attacker,
+						factors of management or mechanism actually involved a lot in the information system failure.
+						The unpatched server vulnerabilities since the administrator missed the email from the CISO, the
+						lack of formal process in place for vulnerability patching and the lack of authorities with
+						mechanisms to auto-renew the digital certificates.
+					</p>
+
+					<p>
+						Reference
+						<br>Fruhlinger, J. (2020). Equifax data breach FAQ: What happened, who was affected, what was
+						the
+						impact?. Available from:
+						https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
+						<br>Committee on Oversight and Government Reform. (2018) The Equifax Data Breach. Available
+						from: https://republicans-oversight.house.gov/wp-content/uploads/2018/12/Equifax-Report.pdf
+						[Accessed 12 February 2021]
+					</p>
+
+
+					<hr class="major" />
+					<h2>Information System Failure Summary</h2>
+					<!-- <p><b>Magna etiam veroeros</b> -->
+					<p>While successful delivery of an Information System lays an important foundation for the future
+						development of a company, resources and managerial effort in the continuous maintenance and
+						updates of the system is also indispensable but easily being insufficient and overlooked. In the
+						case of 2017 Equifax data breach, in addition to the system’s server structural vulnerability,
+						which is the unsegmented server, problems in terms of management actually involved a lot
+						(Committee on Oversight and Government Reform, 2018). The email missed by the administrator
+						concerning server vulnerabilities patching, lack of formal process for vulnerability patching
+						and lack of authorities with mechanisms for renewing the digital certificates.
+					</p>
+					<p>Importance of rigorous policies for Information System regular updating and related staff
+						training could also be seen in the cases provided by my fellow peers. For example, the
+						outsourcing caused lost knowledge for regular system updates of the Royal Bank of Scotland
+						system (Worstall, 2012) and the outdated hardware component, computer operation system and
+						unimplemented security path of National Health Service (Hoeksma, 2017).
+					</p>
+					<p>The updating and vulnerability patching of systems may be problematic and consuming for many
+						institutions, especially when the installation of a patch requires a server or device to be
+						restarted which may cause a service outage (Secure Team, 2019). Besides, the possible
+						operational changes may be introduced and training may be required which may cause the companies
+						less motivated to practice regular update and patching.
+					</p>
+					<p>
+						When it comes to loss of possible system incidents, expenditure on system updates and staff
+						training would be worthy. Therefore, resources should not be spared for rigorous mechanism and
+						policy for regular update and maintenance of the Information System, as well as staff training.
+					</p>
+					<p>
+						Change management team could be one of the policies, which aims at avoiding potential stability
+						issues that arise from the patch and reduces the inconvenience caused by the update to all the
+						stakeholders(Caiazzo, 2020). Efficient patch management suggested by Secure Team (2019) through
+						network segmentation and automation may also reduce the cost of updating. Secure Team (2019)
+						also suggested regimes like PCI-DSS for better identification of system vulnerabilities and how
+						they could be fixed by the patches.
+					</p>
+					<p>
+						Reference
+						<br>Caiazzo P. (2020) Got Patch?: Why Patch Management is Important for Cyber Security.
+						Executive
+						Editorial. Available from:
+						https://www.avertium.com/got-patch-why-patch-management-is-important-for-cyber-security/
+						<br>Committee on Oversight and Government Reform. (2018) The Equifax Data Breach. Available
+						from:
+						https://republicans-oversight.house.gov/wp-content/uploads/2018/12/Equifax-Report.pdf [Accessed
+						12 February 2021]
+						<br>Fruhlinger, J. (2020). Equifax data breach FAQ: What happened, who was affected, what was
+						the
+						impact?. Available from:
+						https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
+						<br>Hoeksma, J. (2017) NHS cyberattack may prove to be a valuable wake up call. BMJ 357. DOI:
+						https://doi-org.ezproxy.bcu.ac.uk/10.1136/bmj.j2818 .
+						<br>Worstall, Tim. (2012) RBS/NatWest Computer Failure: Fully Explained. Available from:
+						https://www.forbes.com/sites/timworstall/2012/06/25/rbsnatwest-computer-failure-fully-explained/?sh=26cc57fe67c7
+						[Accessed 31 January 2021]
+						<br>SecureTeam (2019) 'Security Patching - The Stuff of Sys Admin Nightmares'. Available at:
+						https://secureteam.co.uk/articles/infrastructure/security-patching-the-stuff-of-sys-admin-nightmares/
+						Andress, J. & Leary, M. (2017). Network Segmentation. ScienceDirect.<br>&nbsp
+					</p>
+
+					<p><b>Network Segmentation</b><br>
+						<br>Network Segmentation divides a network into multiple smaller networks, which is called a
+						subnet
+						(Andress J. & Leary M., 2017). Common set of security policies are applied by a group of assets
+						of a subnet (Dosal, 2019).
+					</p>
+					<p>The possible configuration of segmentation may include according to the departments of a company.
+						For instance, the network of R&D department would be restricted considering the commercial
+						secret, while the accounting department has internal access with all the branches. For the other
+						components of the information system, there would be various server networks and a security
+						network which protects management devices such as IDS consoles, syslog servers and backup
+						servers. Besides, some systems should be segmented off (Metivier, 2017), like the physical
+						security system and the industrial control system.</p>
+					<p>In terms of the security advantages of network segmentation, smaller subnets could reduce the
+						blast radius of a possible intrusion. In the case of Equifax, if the guest network and server
+						network were segmented, data of customers would not be breached. Flow of traffic between subnets
+						can also be controlled such as prevention of unauthorized network traffic. </p>
+					<p>Regarding the benefits on the vulnerability patching of the information system, better scheduling
+						for the patches on different subnets and servers of the information system could be achieved
+						with less possible effect on the operation. Segmented networks with its related servers could be
+						identified with their relative value and levels of risks (Secure Team, 2017). For instance,
+						networks or servers with lower value and risks, such as development systems and test systems,
+						could be configured to be updated automatically considering its limited possible side-effect.
+						Networks or servers with higher value and risk, such as customer facing systems, may need to
+						apply patches manually in order to reduce opportunities of service outage. </p>
+					<p>
+						Reference
+						<br>Dosal, E. (2019). What are the benefits of network segmentation?. Compuquip Cybersecurity.
+						Available from: https://www.compuquip.com/blog/4-security-benefits-of-network-segmentation
+						[Accessed 17 February 2020]
+						<br>Metivier, B. (2017). Network Segmentation: How-To Tips. Available from:
+						https://www.tylercybersecurity.com/blog/network-segmentation-how-to-tips [Accessed 17 February
+						2020]
+						<br>SecureTeam (2019) 'Security Patching - The Stuff of Sys Admin Nightmares'. Available at:
+						https://secureteam.co.uk/articles/infrastructure/security-patching-the-stuff-of-sys-admin-nightmares/
+						[Accessed 16 February 2020]
+					</p>
+
+
+					<hr class="major" />
+					<h2>Unified Modelling Language</h2>
+					<p>UML (Unified Modelling Language) is an industry-standard graphic notation for specifying,
+						visualizing, constructing and documenting the artefacts of software systems, which was invented
+						by Ivar Jacobson, Grady Booch and Jim Rumbaugh. UML uses diagrams to express the object-oriented
+						analysis and design of software systems, and we are going to discuss how to exploit UML to
+						formally collect and document our systems. (Fowler M., 2003)<br>&nbsp</p>
+					<p>Class diagrams are one of the most commonly used UML diagrams and are used to describe the
+						objects that make up a system and the relationships between them. They are essentially a way of
+						designing and documenting an object-oriented system.<br>&nbsp</p>
+					<p><b>UML Class Diagram exercise - online store</b></p>
+					<span class="image main"><img src="../images/Class Diagram_Justin.PNG" alt="" /></span>
+					<p>
+						For the rationale of the class diagram design, it was first derived from the user account and
+						the
+						administrator of the online-store accounts, which are OnlineStoreAccount and
+						WebsiteAdministrator. OnlineStoreAccount includes the accounts of the customers and third-party
+						sellers, which is also inherited as an individual seller or seller of organization.<br>&nbsp</p>
+					<p>In terms of the WebsiteAdminstrator, there are two types of administrators: administrators
+						managing the product selling of the website's own company and the administrators maintaining and
+						developing the functionality of the online store, such as managing the website user account,
+						product genre and the searching system.<br>&nbsp</p>
+					<p>Besides, there is a Catalogue of each seller, including the third-party organization or
+						individual seller and the administrate website seller.<br>&nbsp</p>
+					<p>As for the customer, there is a ShoppingBasket of each account and unlimited zero to unlimited
+						number of orders, promotional codes and gift vouchers.<br>&nbsp</p>
+					<p>Concerning the Order Class, each order is composed of at least one Product and one DeliveryMethod
+						selected. Order or orders are being taken care of by the WarehouseStaff using the Stock
+						Database.<br>&nbsp</p>
+					<p>Regarding the Product, each product belongs to a Catalogue of a seller and a Genre, while it also
+						represents at least one product of an Order and a BasketItem of the Shopping Basket. Each
+						Product also owns at least one keyword and only one ProductPage.<br>&nbsp</p>
+					<p>Reference<br>Fowler M. (2003) UML Distilled: A Brief Guide to the Standard Object Modeling
+						Language. 3rd ed. Boston, MA: Addison Wesley</p>
+
+
+					<hr class="major" />
+					<h2>SQL Normalization</h2>
+					<p>Normal forms of normalization:
+					<ul>
+						<li>First Normal Form (1NF): this form is achieved if every value is atomic and each row is
+							unique</li>
+						<li>Second Normal Form (2NF): this form is achieved if it is already in first normal and every
+							column that isn't part of the primary key is dependent on the primary key itself</li>
+						<li>Third Normal Form (3NF): this form is achieved if table is in second normal form and every
+							column that is not part of the primary key is only dependent on the primary key itself</li>
+					</ul>
+					</p>
+					<p><b>Normalization exercise - online store EER diagram</b></p>
+					<span class="image main"><img src="../images/EER_digram_online_store.png" alt="" /></span>
+					<p>Originally, the table of sellers includes the details of the organization including its id, name,
+						email and description for. However, after considering the Second Normal Form (2NF), a table of
+						‘organizations’ was separated from the ‘sellers’ table. The id of the organization is stored in
+						the ‘seller’ table instead of the information.<br>&nbsp</p>
+					<p>Also, considering the Third Normal Form (3NF), the table of ‘sellers’ and ‘customer’ were
+						separated from the table ‘account’. Both seller and customer have their related information,
+						including ‘third_party’ and ‘org_id’ for seller and ‘address’ for the customer. Therefore if the
+						information of seller and customer is included in the ‘account’ table, rules of ‘every column
+						that is not part of the primary key is only dependent on the primary key itself’ would be
+						violated.</p>
+
+
+					<hr class="major" />
+					<h2>SQL & NoSQL database</h2>
+					<p><b>Brief comparison - SQL vs NoSQL</b><br>
+						<!-- <span class="image main"><img src="../images/SQLvsNoSQL.PNG" alt="" /></span> -->
+						SQL is relational database, while NoSQL is non-rational or distributed database. Relational SQL
+						databases are indisputable for their consistency and reliability. However, when it comes to
+						flexibility and high operational speed, SQL relational databases may fall short due to their
+						rigid schema. NoSQL databases are better with speed, scalability, range of data models and
+						global availability because of their flexible schema and support for unstructured data. For
+						instance, NoSQL databases were utilized by Amazon, Google and Yahoo instead of relational
+						databases which may bring the system down due to massive processing of ‘join’ operations and
+						read and write. Moreover, NoSQL databases have been playing a great part in the development of
+						big data, which requires fast or real-time analysis of huge amounts of unstructured
+						data.<br>&nbsp
+					</p>
+					<!-- <p>Reference<br>Nayak, A., Poriya, A., & Poojary, D. (2013). Type of NOSQL databases and its
+						comparison with
+						relational databases. International Journal of Applied Information Systems, 5(4), 16-19.</p> -->
+
+					<p><b>Main types of NoSQL database</b><br>&nbsp</p>
+					<span class="image main"><img src="../images/types_of_NoSQL.PNG" alt="" /></span>
+					<p>According to Amrit Bhatia (2020), NoSQL databases originally refer to “Non-SQL” or
+						“Non-Relational” databases model data which are in non-tabular relations with more flexible data
+						models. NoSQL databases are useful for managing unstructured data and storing the record in a
+						schema-less fashion. As Bhatia mentioned (2020), there are mainly four categories of NoSQL
+						systems: Document, KeyValue, Wide-column and Graph Databases.<br>&nbsp</p>
+					<ul>
+						<li>Document Databases: <br>
+							These databases do not need to have a schema, therefore they are quite flexible and easy to
+							modify. Document databases are suitable for applications which need to store varying
+							attributes with large amounts of data.
+							<ul>
+								<li>Examples of application: data of CMS systems, e-commerce, blogging, platforms,
+									real-time analytics</li>
+								<li>Examples of databases: MongoDB and CouchDB</li>
+							</ul>
+						</li>
+						<li>Key-Value Databases: <br>
+							These databases have simple types since it stores data as a hashtable or dictionary in which
+							the keys are the dictionary work while the value is the definition of that word. Simple way
+							is used instead of query language, such as string, JSON or BLOB (Binary Large Objects).
+							Key-value databases are good for storing large amounts of data without a need of performing
+							complex retrieving queries. Therefore, they offer fast performance for reads and writes
+							since they are just performing searching single key and returning its value instead of
+							performing complex aggregations.
+							<ul>
+								<li>Examples of application: user session in web applications and real-time
+									recommendation</li>
+								<li>Examples of databases: Redis and DynanoDB</li>
+							</ul>
+						</li>
+						<li>Wide-Column Databases: <br>
+							These databases are column-based. They are similar to a relational database storing data in
+							tabular form with rows and columns but with a lot of flexibility. Each row is not required
+							to have the same columns. Wide-columne databases are suitable to store large amounts of data
+							with query patterns to be used.
+							<ul>
+								<li>Examples of application: warehouses data, business intelligence and CRM</li>
+								<li>Examples of databases: Cassandra and HBase</li>
+							</ul>
+						</li>
+						<li>Graph Databases:<br>
+							These databases store data in nodes and edges. Nodes store information about entities, while
+							edges define relationships. Each node and edge has a unique identifier. These
+							multi-relational databases are suitable for situations where various data connections need
+							to be visualized and analysed for different patterns.
+							<ul>
+								<li>Examples of application: social networks, fraud detection, logistics network
+									analysis, spatial data and recommendation engines</li>
+								<li>Examples of graph: InfiniteGraph, JanusGraph and Neo4j</li>
+							</ul>
+						</li>
+						<li>Object Oriented Databases:<br>
+							These databases store data or information which is represented as objects. They are like a
+							combination of object oriented programming and the principle of database such as data
+							encapsulation, polymorphism and inheritance. Accessing data is fast in case the
+							object-oriented objects can be directly retrieved using pointers(Nayak, 2013), which makes
+							modern software development easier to be agile.
+						</li>
+					</ul>
+					<p>
+						Reference<br>
+						Bhatia,Amrit. (July, 2020) NoSQLDatabases–A Replacement of SQL?.Ariel Software Solutions.
+						Available
+						from:https://www.arielsoftwares.com/NoSQL-Databases.html<br>
+						Hazelcast. (2020) What is a key-value store?. Available
+						from:https://hazelcast.com/glossary/key-value-store/<br>
+						Nayak, A., Poriya, A., & Poojary, D. (2013). Type of NOSQL databases and its comparison with
+						relational databases. International Journal of Applied Information Systems, 5(4), 16-19.
+						<br>&nbsp
+					</p>
+					<p><b>Non-SQL or Not-Only-SQL? </b><br>
+						In view of the development trend of the usage of database, the meaning of NoSQL is more suitably
+						about Not-only SQL instead of Non-SQLwhich is originally referred to. As Puthenveettil (2017)
+						mentioned, only the normal SQL relational database with tabular data modelling can accomplish
+						ACID (atomicity, consistency, isolation, durability), JOIN with normalization and filter columns
+						in the table. On the other hand, only non-relational databases can be applied for unstructured
+						data or information analysis in big data. NoSQL databases, which filter only rows in the big
+						data, can achieve many implementations in data modelling. Categorizing the databases becomes
+						more difficult and unnecessary, as Puthenveettil (2017) also stated that it should be more about
+						the modelling. NewSQL and neo4j may be the examples, which are non-relational databases with
+						ACID.
+						<br>&nbsp<br>Reference<br>
+						Puthenveettil, T. (2017). Is it ‘NoSQL’ or ‘Not Only SQL’?. Available from:
+						https://www.codementor.io/@tonyputhenveettil/is-it-nosql-or-not-only-sql-7s9trdsgk
+
+					</p>
+
+					<hr class="major" />
+					<h2>Object Oriented Information System</h2>
+					<p>Based on the class diagram previously proposed for the information system of the online store,
+						the object-oriented system design was implemented in applicable
+						programming languages, which are Python and SQL.</p>
+					<p><b>Inheritance</b><br>
+						Inheritance allows us to define a class that inherits all the methods and properties from
+						another class. In the exercise of online store development, inheritance is implemented for the
+						classes including account, customer, third-party seller and website seller. Since the user of
+						the online store is either customer or seller, class ‘Account’ is inherited to the class
+						‘Customer’ and ‘Seller’.</p>
+					<span class="image main"><img src="../images/Class_Account.png" alt="" /></span>
+					<span class="image main"><img src="../images/Class_Customer.png" alt="" /></span>
+					<span class="image main"><img src="../images/Class_Seller.png" alt="" /></span>
+					<p>As there are third-party sellers, including individual sellers or organizational sellers, and
+						website sellers, Class ‘Seller’ is then inherited as classes including
+						‘ThirdPartyIndividualSeller’, ‘ThirdPartyAdminOrgSeller’ and ‘WebsiteSeller’. The child class of
+						'Seller' have additional attributes such as 'organization_id' and attributes with default value,
+						which is used for identify seller is third-party or not</p>
+					<span class="image main"><img src="../images/Class_ThirdPartySeller.png" alt="" /></span>
+					<span class="image main"><img src="../images/Class_WebsiteSeller.png" alt="" /></span>
+					<p><b>Functions</b><br>
+						Functions of the classes defined are mainly associated with the operation with the database
+						using MySQL. First, all classes of account, customer and seller have functions:<br>
+						1. Functions of adding a new object instance with information stored to the database</p>
+					<span class="image main"><img src="../images/addCustomer.png" alt="" /></span>
+					<span class="image main"><img src="../images/addSeller.png" alt="" /></span>
+					<p>2. Functions of getting information from the database and init an instance</p>
+					<span class="image main"><img src="../images/getCustomerInfo.png" alt="" /></span>
+					<span class="image main"><img src="../images/getSellerInfo.png" alt="" /></span>
+					<p>There are also functions of class ‘Customer’ and ‘Seller’ related to products respectively. <br>
+						1. Customer class: productToBasket(poduct_id, quantity), checkBasket(),
+						purchaseBasketToOrder()<br>
+						2. Seller class: addProduct(productName, price, genre, description, quantity), listProducts()
+					</p>
+					<p>In addition, ‘Order’ class is used for recording each order and is defined with functions for the
+						processes of purchasing and choosing delivery methods.<br>&nbsp</p>
+					<p><b>Reflection on achieving proposed features</b><br>
+						Reflection according to the class diagram proposed before.
+						Comparison will be carried out between the proposed features and the conduct features.
+					</p>
+					<ul>
+						<li>Features achieved: <br>
+							<ul>
+								<li>Classes with functions for the customers and different types of sellers of the
+									online store.
+									Basic functions of the transaction operations defined including basket operations,
+									purchasing order with functions for choosing payment and delivery methods and adding
+									products.</li>
+							</ul>
+						</li>
+						<li>Features discarded: <br>
+							<ul>
+								<li>The ‘BasketItems’ and ‘ShoppingBasket’ classes proposed were discarded.
+									‘BasketItems’ class was discarded considering that the basket items’ related
+									operations are already defined in functions of the customer. For the
+									‘ShoppingBasket’ class proposed, it was not defined due to the similar reason for
+									the ‘BasketItems’ class. It seems redundant to initiate another instance of basket
+									for each customer. <br>
+									The ‘Catalogue’ class was discarded as well, since most operations of managing
+									products for the sellers were defined with functions in the class ‘Seller’ and the
+									seller of each product is already recorded with ‘seller_id’ in the table of
+									‘products’.</li>
+							</ul>
+						</li>
+						<li>Features unattempted: <br>
+							<ul>
+								<li>Purchase operations such as using gift voucher or promotional codes when purchase,
+									the searching systems, warehouse operations and the classes such as
+									‘WebsiteMaintenanceAdmin’.</li>
+							</ul>
+						</li>
+					</ul>
+					<hr class="major" />
+					<h2>Emerging trends in information system</h2>
+					<p>Information systems are combinations of hardware, software, and telecommunications networks that
+						people build and use to collect, create, and distribute useful data, typically in organizational
+						settings. (Valacich, 2013) The ‘information’ is defined as the data organized in a way that is
+						useful. There are five megatrends of information technology since 2013 according to Valacich
+						(2013), which are mobile, social media, big data, cloud computing and consumerization of
+						IT.<br>&nbsp</p>
+
+					<p>In addition to the megatrends which can be observed with the impact of information technology
+						development, information technologies are increasing the part they play in most industries
+						globally or even fostering the emergence of new industries.<br>&nbsp</p>
+
+					<p><b>Drones</b><br>
+						One of the emerging information technologies is the drones. According to EGHAM (2019), the
+						worldwide shipments of Internet of Things (IoT) enterprise flying drones in 2020 are 526,000
+						units, which is 50% more than that of 2019, and it is forecasted to reach 1.3 million units by
+						2023.<br>&nbsp<br>
+
+						The drones are early adopted and increasingly being used by the construction sector.
+						Construction tasks such as site surveying and earthworks management carried by drones instead of
+						workers are faster and safer. In addition to the construction sector, which has the highest use
+						cases of drones globally, fire services monitoring, insurance investigation, police evidence
+						gathering and retail fulfillment are the other most global usages with IoT drones adopted
+						(Gartner, 2019).<br>&nbsp<br>
+
+						The development of information systems, such as the Geospatial information system (GIS), related
+						to the increasing drone usage in different sectors globally is of paramount importance. It would
+						be demanding for the IS in order to fully utilize the massive information collected by drones
+						and considering that the remote capabilities of drones coupled with AI applications are
+						increasingly required as well (Watters, 2020). Besides, as Brooks (2019) stated, data overload
+						may also be the possible problem for the IS. Drones are great at collecting a wealth of data,
+						but organizing and parsing the data into useful data and transmitting it wirelessly to the
+						destination is still challenging.<br>&nbsp<br>
+
+						Reference<br>
+						Brooks, J. (2019). The Aerial Perspective Blog. Mapware. Available from:
+						https://www.mapware.ai/blog/how-drones-supercharge-gis-management<br>
+						EGHAM (2019). Gartner Forecasts Global IoT Enterprise Drone Shipments to Grow 50% in 2020.
+						Gartner. Available from:
+						https://www.gartner.com/en/newsroom/press-releases/2019-12-04-gartner-forecasts-global-iot-enterprise-drone-shipmen<br>
+						Valacich. J., Schneider. C. (2013). Information Systems Today Sixth Edition
+
+					</p>
+
+
+
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Search -->
+				<section id="search" class="alt">
+					<form method="post" action="#">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="../index.html">Homepage</a></li>
+						<li>
+							<span class="opener">University of Essex<br>Computer Science</span>
+							<ul>
+								<li><a href="#">Launching into Computer Science</a></li>
+								<li><a href="./Essex_CS/M2_OOIS.html">Object-oriented Information Systems</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Tecky Academy Projects</span>
+							<ul>
+								<li><a href="#">Conway's Game of Life</a></li>
+								<li><a href="#">Hong Kong Lennon Wall</a></li>
+								<li><a href="#">Hiking Game Web App</a></li>
+							</ul>
+						</li>
+						<li><a href="generic.html">Compu</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Ante interdum</h2>
+					</header>
+					<div class="mini-posts">
+						<article>
+							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+						</article>
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button">More</a></li>
+					</ul>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
+						ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
+						tempus aliquam.</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+						<li class="icon solid fa-phone">(000) 000-0000</li>
+						<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+							Nashville, TN 00000-0000</li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a
+							href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
