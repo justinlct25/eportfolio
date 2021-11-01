@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development (Computer Science)</h1><br>
+                        <h3>Module 3 - Unit 4 Artifacts</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Portfolio Component : Programming language concept</h2>
+                    <h4>What is ReDOS and what part do ‘Evil Regex’ play?</h4>
+                    <p>ReDOS (Regular expression Denial of Service) is a Denial of Service attack. According to Weidman, A.(n.d), the attack exploits the extreme situations that most Regular Expression implementations may reach which cause them to work very
+                        slowly. An attacker causes a program using a Regex to enter these extreme situations making the program hang for a long time. </p>
+                    <p>The Regex pattern that can get stuck on crafted input is called Evil Regex. Evil Regex contains grouping with repetition and repetition / alternation with overlapping inside the repeated group. (eg. (a+)+, ([a-zA-Z]+)* & (.*a){x} for
+                        x\>10 ) An attacker looks for applications that use Regex containing an Evil Regex and sends a well-crafted input. Alternatively, the attacker can inject an Evil Regex if a Regex itself is affected by a user input. </p>
+
+
+                    <hr class="major" />
+                    <h4>What are the common problems associated with the use of regex? How can these be mitigated?</h4>
+                    <p>There are four common pitfalls of the Regex (Regex.info, n.d.):
+                        <li>Catastrophic Backtracking: It is likely to be a case of Catastrophic Backtracking when your regular expression seems to take forever or crashes your application. The possible solution is to be more specific about what you want
+                            to match</li>
+                        <li>Making Everything Optional: Regex will match a zero-length string anywhere if all the parts of Regex are optional. Solution is that you need to express the facts that different parts are optional depending on which parts are present</li>
+                        <li>Repeating a Capturing Group vs Capturing a Repeated Group: it is a common mistake when creating a regular expression which needs a capturing group to grab part of the text matched. The capturing group is to be repeated instead
+                            of the repeated group. The repeated capturing group will capture only the last iteration, while a group capturing another group that’s repeated will capture all iterations. </li>
+                        <li>Mixing Unicode and 8-bit Character Codes: using 8-bit character codes like \x80 with a Unicode engine and the subject string may give unexpected results</li>
+                        There are some regex best practices suggested by Li (2020):
+                        <li>Input validation: uses whitelist instead of black list when filtering such as file types and IP addresses. </li>
+                        <li>Regex patterns should not be published: publish the patterns makes it easier for attackers to find security holes in regex pattern</li>
+                        <li>Use validated patterns: use validated and secured regex pattern online is better choice than writing your own regex patterns for common use-cases</li>
+                        <li>Multiple defense layers: In addition to rigorous input validation, other methods such as prepared-statement, least privileges principle and hashing can also be implemented</li>
+                        <li>Testing: rigorously testing the application with unexpected and illegal input</li>
+                    </p>
+
+                    <hr class="major" />
+                    <h4>How and why could regex be used as part of a security solution?</h4>
+                    <p>“RegEx” is a special string that describes a search pattern, which is powerful in pattern matching. RegEx can be thought of having two parts including constants and operators. Constants are sets of strings while operators are symbols
+                        which denote the operations over these constants. Logile Analysis is an example of Regex being useful to make searching more quickly and accurate. </p>
+                    <p>As Li, V. (2020) mentioned, there are several security usages of RegEx:
+                        <li>Firewall Rules and Input Validation: RegEx can be used to specify firewall rules to block requests to certain file types by matching any request that contains the terms such as “exe”, “json”, “tar” and “rar”.
+                        </li>
+                        <li>Proxy Rules: RegEx can be useful in application debugging and testing. RegEx can be used to filter traffic on debugging proxies which is more efficient</li>
+                        <li>Malware Scanning: RegEx patterns is used in YARA to detect specific text or binary patterns in files that might indicate that the file is malicious </li>
+                    </p>
+
+                    <hr class="major" />
+
+                    <p>
+                        Reference:
+                        <li>OWASP (n.d). Regular expression Denial of Service - ReDoS. Available from: https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS</li>
+                        <li>Irwin, C. (2020). How to eliminate regular expression denial of service. Available from: https://blog.superhuman.com/how-to-eliminate-regular-expression-denial-of-service/</li>
+                        <li>Regex.info (n.d). Sample Regular Expression. Available from: https://www.regular-expressions.info/examples.html</li>
+                        <li>Li, V. (2020) Dangerous Regular Expressions. Available from: https://sec.okta.com/articles/2020/07/dangerous-regular-expressions</li>
+                    </p>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

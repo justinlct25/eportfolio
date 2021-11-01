@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development (Computer Science)</h1><br>
+                        <h3>Module 3 - Unit 8 Artifacts</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Discussion Topic</h2>
+                    <h4>TrueCrypt was a popular and well-respected operating system add-on that could create encrypted volumes on a Windows and/or Linux system. In addition, it was also designed to create a complete, bootable volume that could encrypt the
+                        entire operating system and data for a Windows XP system. It was discontinued in 2014.</h4>
+                    <p>Case Study: Read the TrueCrypt cryptanalysis by Junestam & Guigo (2014) (link is in the reading list) and then answer the following questions:
+                        <li>The (anonymous) TrueCrypt authors have said “Using TrueCrypt is not secure as it may contain unfixed security issues” (http://truecrypt.sourceforge.net/, 2014). Does the cryptanalysis provided above prove or disprove this assumption?</li>
+                        <li>Would you be prepared to recommend TrueCrypt to a friend as a secure storage environment? What caveats (if any) would you add? </li>
+                    </p>
+
+                    <hr class="major" />
+                    <p>As indicated by the website of TrueCrypt (TrueCrypt, nd), TrueCrypt may contain unfixed security flaws and the development of TrueCrypt was discontinued in 2014, thus alternative encryption methods such as BitLocker are recommended.
+                        Nevertheless, most security audits conducted for TrueCrypt did not find significant security flaws or malicious issues. Open Crypto Audit Project (OCAP) has conducted two phases of security audit of TrueCrypt which finished in
+                        April 2014 and April 2015 respectively. The audit reveals 11 vulnerabilities including 4 of Medium severity, 4 of Low severity and 3 for informational. They also found that the bootloader did not meet expected standards for secure
+                        code and there is potential weakness in the Volume Header integrity (Junestam, A., Guigo, N. 2014). In spite of that, they “found no evidence of deliberate backdoors, or any severe design flaws that make the software insecure in
+                        most instances”. Another security analysis report conducted by the Federal Office for Information Security also found the issues associated with TrueCrypt are more related to aspects not of malicious intent such as the code integrity
+                        and maintainability (Baluda et al., 2015). </p>
+                    <p>Although there are no significant security flaws or malicious intent found in TrueCrypt, it is not recommended to use TrueCrypt. First, TrueCrypt is no longer maintained which will become less secure overtime. Second, there are currently
+                        many other alternative encryption tools, such as the open source encryption software VeraCrypt, Axcrypt, Cryptomator, etc. and the proprietary OS built-in encryption BitLocker suggested by the website of TrueCrypt. Based on my
+                        recommendation on using alternative encryption tools, little research was conducted on the alternative tools, especially the BitLocker suggested by the website of TrueCrypt and VeraCrypt which is the successor or improved version
+                        of TrueCrypt. </p>
+                    <p>Both VeraCrypt and BitLocker are currently among the top encryption tools providing sufficient security to data of most of the users. Both tools use XTS mode, which provides more protection than other confidentiality-only modes against
+                        manipulation of the encrypted data. The following may be some other characteristics or information of each tool.
+
+                    </p>
+                    <p>VeraCrypt is an open-source utility for on-the-fly encryption(OTFE) software(VeraCrypt, nd). Users can ensure the code does not contain backdoors, while using closed-source BitLocker cannot. Taking the results from the security audits
+                        of TrueCrypt, VeraCrypt is a significantly security improved version of TrueCrypt. Many vulnerabilities and security issues found in TrueCrypt were solved in VeraCrypt. The complexity of password cracking also increased by 10 to
+                        about 300 times(Tan, C., Zhang, L., Bao, L., 2020). VeraCrypt supports a variety of encryption algorithms such as AES, Serpent and Twofish and hash algorithms including RIPEMED-160, SHA-512 and Wirlpool algorithm. Therefore, VeraCrypt
+                        is flexible in encrypting methods. The on-the-fly way of encryption enables automatic, fast and convenient transferation of data among folders and the target encrypted volume folder. As Henry, A. (2016) mentioned, VeraCrypt excels
+                        at encryption and decryption of specific files or containers as it is fast and flexible.
+
+                    </p>
+                    <p>
+                        BitLocker first appeared in Windows Vista as Microsoft’s own OS baked-in encryption tool. It is convenient for Windows users to use as it is just flipping a switch in the Control Panel. BitLocker uses Advanced Encryption Standard (AES) as its encryption
+                        algorithm, which is also one of the algorithms included in VeraCrypt’s algorithms. The AES algorithm uses Full Volume Encryption Key (FVEK) as the encryption key for encrypting a partition of or entire disk. Moreover, full-disk
+                        encryption is often the choice of the most secure way of encryption since it takes away the concerns of sensitive data leakage through temporary files, page files, caches, etc. For conducting full-disk encryption, purely using
+                        software-based encryption has the inherent weaknesses such as encryption key being present in RAM (Meijer, C., Gastel, B., 2018). If BitLocker is used in full-disk encryption for the drive which supports TCG Opal standard, BitLocker
+                        may autonomously decide to rely on hardware encryption, though it can be set to software encryption manually(Meijer, C., Gastel, B., 2018).
+                    </p>
+                    <p>However, the research of Meijer & Gastel(2018) also points out that there is the possibility of encryption being bypassed entirely allowing data recovery without keys if encryption relies only on hardware using BitLocker. They suggested
+                        also employing a software full-disk encryption solution. VeraCrypt allows for in-place encryption while the operating system is running and co-exist with hardware encryption. Therefore, using both BitLocker and VeraCrypt along
+                        with each other may not only be a possible or even better way of full-disk encryption.
+
+                    </p>
+                    <p>
+                        Besides, it is also worth mentioning that password or key management plays an important part in data encryption. Brute force attack is usually the most feasible way for encrypted data, such as decrypting VMK password(Tan, C., Zhang, L., Bao, L., 2020).
+                        There is much research of password guessing technology, which has been promoting the motivation of brute force password cracking(Hitaj, B., Gasti, P., Ateniese, G., 2019). For instance, the usage of a password dictionary that collects
+                        various passwords for guessing. Based on the dictionary, other passwords can also be generated using various deformation rules, or integration of the personal information or hot words of the target person. Chips like FPGA, ASIC
+                        and GPU also accelerate the attack. In addition to brute force, attackers may also use Key Theft trying to obtain keys from other places. Such as obtaining FVEK key from memory dump file or hibernation file, finding recovery key
+                        by searching .txt file on PC/USB/Microsoft account, searching external key from the .bek files etc.
+
+
+                    </p>
+                    <hr class="major" />
+                    <p>
+                        References:
+                        <li>Baluda et al., Security Analysis of TrueCrypt. Available from: http://home.eng.iastate.edu/~othmanel/files/CPRE562/Truecrypt.pdf , 2015
+
+                        </li>
+                        <li>
+                            Henry, A. (2016) Windows Encryption Showdown: VeraCrypt vs Bitlocker. Available at: https://lifehacker.com/windows-encryption-showdown-veracrypt-vs-bitlocker-1777855025 [accessed on 9th October 2021].
+
+
+                        </li>
+                        <li>
+                            Hitaj B, Gasti P, Ateniese G, et al. Passgan: A deep learning approach for password guessing[C]//International Conference on Applied Cryptography and Network Security. Springer, Cham, 2019: 217-237.
+
+
+                        </li>
+                        <li>
+                            Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project Truecrypt Security Assessment. Available at: http://truecrypt.sourceforge.net/ [accessed 9th October 2021].
+
+
+                        </li>
+                        <li>
+                            Meijer, C. & Gastel, B. (2018) Self-encrypting deception: weaknesses in the encryption of solid state drives (SSDs)
+
+
+                        </li>
+                        <li>
+                            TrueCrypt. (n.d.) Homepage. Available at: http://truecrypt.sourceforge.net/ [accessed on 9th October 2021].
+
+
+                        </li>
+                        <li>
+                            Tan, C., Zhang, L. & Bao, L. (2020) A Deep Exploration of BitLocker Encryption and Security Analysis. 2020 IEEE 20th International Conference on Communication Technology.
+
+
+                        </li>
+                        <li>
+                            VeraCrypt. (n.d.) Homepage. Available at: https://www.veracrypt.fr/en/Home.html [accessed on 9th October 2021].
+
+
+                        </li>
+                    </p>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

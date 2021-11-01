@@ -1970,6 +1970,10 @@ ol li {
     padding-left: 0.25em;
 }
 
+li {
+    padding-left: 20px;
+}
+
 ul {
     list-style: disc;
     margin: 0 0 0.5em 0;

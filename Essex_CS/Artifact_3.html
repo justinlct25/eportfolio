@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development (Computer Science)</h1><br>
+                        <h3>Module 3 - Unit 3 Artifacts</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Team Discussion 1 : What is a Secure Programming Language</h2>
+                    <h4>What factors determine whether a programming language is secure or not?</h4>
+                    <p>An important factor, in my perspective, is the scope of application or task we would like to achieve by that language. As Croft R, Xie Y., & Zahedi M. etc (2021) mentioned, security challenges are often oriented towards the task that
+                        the language is commonly utilized for. Applications involving interaction with the users or third party, such as those over the internet including web and mobile applications, usually come along with more security concerns. Therefore,
+                        is that programming language belongs to its common usage categories could tell if it is secure to a certain extent. For instance, the scientific programming languages such as R, Julia and MATLAB, which have low consideration for
+                        security in its design, would definitely be inappropriate for developing a web application, while some languages with lower-level abstraction like C/C++, which usually used for control over the underlying operating system and architecture,
+                        are also not appropriate for using as web development considering its genre such as its arbitrary memory manipulation or address which would easily leads to secure vulnerabilities such as buffer overflows error (no way of telling
+                        the end of an array or allocated block of memory) and injection errors (manual memory allocation and deallocation and bounds and type checks). C/C++ as a compiled language, the compiler also cannot detect common errors at the run-time.
+                        Moreover, JavaScript, TypeScript and PHP are web-oriented languages, while Java, C#, Objective-C and Swift are mobile-oriented languages</p>
+                    <p>Another factor is how the programming language handles the most common vulnerabilities faced by the application which requires interaction with the user, customer or other third-parties. For instance, reading input, evaluating expressions,
+                        serialization, overflow error and race condition. </p>
+                    <p>Community support may also be a factor in considering whether a programming language could be a secure enough application. </p>
+                    <p>In addition, the total number of the vulnerabilities reported among the languages should not be considered as a factor. For example, C has the highest number of vulnerabilities reported, with about 50% of all reported in the past 10
+                        years(WhiteSource, 2021). One of the reasons is that the C language has a long existence written with more code since its first use. Also, the genre of C language, which is memory manipulation, accounts for a majority of its vulnerabilities
+                        reported (Turner, S., 2013). Requirement of manual memory manipulation may easily give rise to many possible vulnerabilities and false usages, but also thanks to this C language can servers as the base language for many higher
+                        level languages and operating system, such as being at the hardware / software boundary for mapping their peripherals and I/O pins into memory addresses. </p>
+
+                    <hr class="major" />
+                    <h4>Python would be a better language to create operating systems than C. Discuss.</h4>
+                    <p>Python may not be a better language to create operating systems than C. Python is a high-level and interpreted general-purpose language, which has to be run in the given system using another program instead of its local processor,
+                        while C language is a straight compiled language which is closed to the hardware. As a compiled language closed to the hardware, C language has multiple characteristics or advantages making it still being built on top of by many
+                        operating system and higher level languages including Python (Munoz, D., 2021):
+                        <li>portability and efficiency - close to the machine and almost universally available for existing process architectures</li>
+                        <li>memory manipulation - arbitrary memory address access and pointer, which is import for system programming and enables computer systems and microcontrollers map their peripherals and I/O pins into memory address</li>
+                        <li>deterministic usage of resources - C pointers allow placing data in custom addresses. Languages that depend heavily on memory management or dynamic allocation and garbage collection wound not be a fit for resource-limited systems,
+                            such as some embedded systems with limited in time and memory resources</li>
+                    </p>
+
+                    <hr class="major" />
+
+                    <p>
+                        Reference:
+                        <li>Croft, R., Xie, Y., Zahedi, M., Babar, A., Christoph, T. (2021). An Empirical Study of Developers' Discussions about Security Challenges of Different Programming Languages. </li>
+                        <li>Munoz, D. (2021). After All These Years, the World is Still Powered by C Programming. Available from: https://www.toptal.com/c/after-all-these-years-the-world-is-still-powered-by-c-programming</li>
+                        <li>Turner, S. (2013). Security vulnerabilities of the top ten programming languages</li>
+                        <li>WhiteSource (2021). Most Secure Programming Language. Available from: https://www.whitesourcesoftware.com/most-secure-programming-languages/</li>
+                    </p>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

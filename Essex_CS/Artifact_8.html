@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development (Computer Science)</h1><br>
+                        <h3>Module 3 - Unit 8 Artifacts</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Cryptography programming exercise</h2>
+                    <h4>Select one of the methods described/ examples given and create a python program that can take a short piece of text and encrypt it.</h4>
+                    <p>The Symmetric Cryptography with Data Encryption Standard (DES) algorithm was chosen to be attempted. Symmetric cryptography is the encryption and decryption process using a single key. DES is a symmetric key algorithm that uses block
+                        ciphers of 64 bits and a key size of 56 bits. </p>
+                    <span class="image main"><img src="../images/artifact_8a.jpeg" alt="" /></span>
+                    <span class="image main"><img src="../images/artifact_8b.jpeg" alt="" /></span>
+
+                    <hr class="major" />
+                    <h4>Why did you select the algorithm you chose?</h4>
+                    <p>Compared to the asymmetric key which works in the reverse way of symmetric cryptography and requires two keys, symmetric cryptography is simpler and faster resulting in less requirement on performance. It is also simpler for me to
+                        try implementing it compared to the asymmetric key. Due to the better performance of symmetric encryption compared to asymmetric, it is uypically used for bulk encryption or encrypting large amounts of data such as database encryption
+                        (Cryptomathic, 2020). However, it is of paramount importance that the symmetric key must be exchanged between two parties in a secure way. </p>
+
+                    <hr class="major" />
+                    <h4>Would it meet the GDPR regulations? Justify your answer.</h4>
+                    <p>Using symmetric cryptography with the DES algorithm can reduce the probability of data breach. Important data can be encrypted instead of being stored, passed or processed in plain text. GDPR places the responsibility on the controller
+                        and the processor of the personal data to implement appropriate measures to secure the data. Considering that GDPR does not mention the explicit encryption methods in order to secure the data, the DES algorithm for symmetric cryptography
+                        could be one of the possible ways to secure the data. </p>
+                    <p>However, as Thakkar (2020) mentioned, DES has already been cracked by many security researchers. It was officially deprecated and replaced by the AES encryption algorithm in 2005. Low encryption key length is the biggest downside to
+                        DES, which enables brute-forcing attack success easily. </p>
+                    <p>Besides, 3DES is an upgraded version of the DES algorithm, which was developed to overcome the drawbacks of the DES algorithm. The algorithm thrice to each data block. Nonetheless, it was still discovered with the Sweet32 vulnerability,
+                        causing the security industry to deprecate the algorithm. The draft guidance provided by the National Institute of Standards and Technology (NIST) (2019) also mentioned that the use of 3DES is to be scrapped in all new applications
+                        after 2023. TLS 1.3, which is the latest standard of SSL/TLS protocols, also discontinued using 3DES. </p>
+                    <p>Therefore, the DES algorithm used may not be sufficient nowadays. More secure version of encryption may be chosen for data protection. </p>
+
+
+                    <hr class="major" />
+                    <p>
+                        Reference:
+                        <li>Cryptomathic (2020) Symmetric Key Encryption - why, where and how it’s used in banking. Available from: https://www.cryptomathic.com/news-events/blog/symmetric-key-encryption-why-where-and-how-its-used-in-banking</li>
+                        <li>NIST (2019) NIST Special Publication (SP) 800-131A Revision 2. Available from: https://csrc.nist.gov/CSRC/media/Publications/sp/800-131a/rev-2/draft/documents/sp800-131Ar2-draft.pdf</li>
+                        <li>Thakkar, J. (2020) Types of Encryption: 5 Encryption Algorithms & How to Choose the Right One. Available from: https://www.thesslstore.com/blog/types-of-encryption-encryption-algorithms-how-to-choose-the-right-one/</li>
+                    </p>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
