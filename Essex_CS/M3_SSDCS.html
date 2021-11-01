@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development (Computer Science)</h1><br>
+                        <h3>Module 3</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Unit 1 - Introduction to Secure Software Development</h2>
+                    <p>This week, the lecturecast has brought me through the brief information and basics in the problems in cybercrime, weakness and proactive controls advised by the OWASP, integration of security measures in Agile model and the usage of
+                        UML diagrams. In the discussion forum, I read some in-depth investigations on the most possible software weaknesses identified by OWASP written from my classmates. </p>
+                    <p>With little experience in programming after participating in a boot camp since February, I started working in an IOT company this month. During this short period of time doing practical programming, the developing environments I am
+                        in are totally functional driven with less security concerns involved. In boot camp, it is all about how I can make some fancy-looking stuff within a short period of time or a agile development model without security concerns.
+                        In my new company, most of the IOT data collecting and processing are not private or personal data and thus less priority in security. This unit has broadened my horizon especially in terms of the software security and the possible
+                        weaknesses. </p>
+
+                    <hr class="major" />
+                    <h2>Unit 2 - UML Modelling to Support Secure System Planning</h2>
+                    <p>I continue reading the book “Software Architecture with Python” in chapters 1 and 6. In the Chapter 1 Principles of Software Architecture, I got a glimpse of the importance of early stage design of software architecture, knowing that
+                        the architectural quality can be observed by various attributes like modifiability, testability, scalability, performance and the one which is also the protagonist of this module, security. In Chapter 6 Writing Secure Code, I got
+                        familiar with some security concerns in writing Python such as: </p>
+                    <ul>
+                        <li>Reading input: use raw input over the input in order to return input as plain text instead of evaluating Python expression. Besides, getpass is a good library to perform validations on the returned data</li>
+                        <li>Evaluating expression: avoid using eval and exec</li>
+                        <li>Serialization: avoid using pickle / cPickle</li>
+                        <li>Overflow error: Python does not suffer from pure buffer overflow errors, but for overridden __len__ methods on classes, guard should be implemented against integer overflows by using exception or TypeError handler</li>
+                        <li>String formatting: prefer newer and safer format of template strings over older %s</li>
+                    </ul>
+                    <p>Also in this Secure Code chapter, I found it interesting in studying race conditions. Python provides an excellent set of threading primitives. Race conditions and deadlocks are avoided by the threading primitives set to synchronize
+                        access to resources, such as threading.Lock. I had less concept in the topics related to condition, since at the moment most of my practical programming experience was in boot camp in which I was using Node.js in Typescript. But
+                        then I also found that although Node.js is a single threaded application, it is still possible to run into race conditions. The reason is that the program workflow includes I/O (database, file system) running on many threads. It
+                        is possible that the shared resource is outside of the Node.js being accessed or operated at the same time.
+                    </p>
+                    <hr class="major" />
+                    <h2>Unit 1 - Introduction to Secure Software Development</h2>
+                    <p>This week, the lecturecast has brought me through the brief information and basics in the problems in cybercrime, weakness and proactive controls advised by the OWASP, integration of security measures in Agile model and the usage of
+                        UML diagrams. In the discussion forum, I read some in-depth investigations on the most possible software weaknesses identified by OWASP written from my classmates. </p>
+                    <p>With little experience in programming after participating in a boot camp since February, I started working in an IOT company this month. During this short period of time doing practical programming, the developing environments I am
+                        in are totally functional driven with less security concerns involved. In boot camp, it is all about how I can make some fancy-looking stuff within a short period of time or a agile development model without security concerns.
+                        In my new company, most of the IOT data collecting and processing are not private or personal data and thus less priority in security. This unit has broadened my horizon especially in terms of the software security and the possible
+                        weaknesses. </p>
+
+
+                </section>
+                <section>
+                    <p><b>Brief reasons for the failure</b>
+                        <ul>
+                            <li>The information systems were not adequately segmented from one another, thus the attackers were able to move from the web portal to other servers.</li>
+                        </ul>
+                    </p>
+                    <p><b>Impact of the failure</b>
+                        <ul>
+                            <li>143 million people was potentially affected</li>
+                            <li>Personal information (names, addresses, dates of birth, Social Security numbers, drivers' licenses numbers) of more than 40% of the population of the United States was exposed</li>
+                            <li>The upper ranks of Equifax's C-suite rapidly turned over</li>
+                        </ul>
+                    </p>
+                    <p><b>Human factor of the failure</b><br> Not only the system or server structural vulnerability make it convenient for the attacker, factors of management or mechanism actually involved a lot in the information system failure. The unpatched
+                        server vulnerabilities since the administrator missed the email from the CISO, the lack of formal process in place for vulnerability patching and the lack of authorities with mechanisms to auto-renew the digital certificates.
+                    </p>
+                    <p>
+                        Reference
+                        <br>Fruhlinger, J. (2020). Equifax data breach FAQ: What happened, who was affected, what was the impact?. Available from: https://www.csoonline.com/article/3444488/equifax-data-breach-faq-what-happened-who-was-affected-what-was-the-impact.html
+                        <br>Committee on Oversight and Government Reform. (2018) The Equifax Data Breach. Available from: https://republicans-oversight.house.gov/wp-content/uploads/2018/12/Equifax-Report.pdf [Accessed 12 February 2021]
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
