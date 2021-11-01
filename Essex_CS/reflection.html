@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Secure Software Development (SSDCS)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="../index.html" class="logo"><strong>Computer Science</strong> University of Essex</a>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Secure Software Development</h1><br>
+                        <h3>Development Team Project - Reflection</h3>
+                    </header>
+
+                    <!-- <span class="image main"><img src="../images/python.jpeg" alt="" /></span> -->
+                    <hr class="major" />
+                    <h2>Reflection</h2>
+                    <h4>Work allocation</h4>
+                    <p>During the development of the application, I was focused on building the functionalities of the ThreatManager website, while Hendrik was responsible for the login and the related security functions like TOPT and Jonny mainly worked
+                        on the front-end and started investigating the testing.
+                    </p>
+                    <p>From my point of view, it was quite a good work division. Since there is less overlapping among the work we distributed, meaning that they were less prone to affecting each other which may result in difficulties in integration.
+                    </p>
+                    <p>
+                        The development pace is thus quite fast in my opinion as there are less hard integration problems with git which may hinder the development.
+
+                    </p>
+                    <hr class="major" />
+                    <h4>Challenges in implementing functionalities</h4>
+                    <p>User role authorization
+                        <li>As designed in the proposal document, there are different roles of users of the threat report system Each of them have different authorization in accessing different amounts of information and functionalities.
+                        </li>
+                        <li>Thus, there is much consideration in writing the conditions to determine different data loading and different rendering.
+                        </li>
+                    </p>
+                    <p>
+                        Multiple Files upload and download
+                        <li>Since the number of files being downloaded by the user each time the download button is clicked, we have to count the number of files uploaded first in order to consider whether zipping multiple files is necessary. Along with the
+                            security checks on file name, extension and calculating the total size of all the files, this is quite tricky to implement.
+                        </li>
+                    </p>
+                    <p>Database associated
+                        <li>It was also the first time for me to use SQLAlchemy, which provides an Object Relational Model (ORM) storing Python objects to a database representation of the object’s data. SQLAlchemy allows me to implement functions and operations
+                            in a Pythonic way, or in an object oriented way.
+                        </li>
+                        <li>
+                            As tables are normalised in the database, innerjoining several tables’ columns and row counts is necessary in order to render the threat list by threats and the comments associated with them.
+
+                        </li>
+                    </p>
+
+                    <hr class="major" />
+                    <h4>Security Challenges</h4>
+                    <p>
+                        This project has enlightened me in having security concerns while implementing the functionalities.
+                    </p>
+                    <p>
+                        Different access authority for different user role
+                        <li>The page is different for different user roles on the same routing pages, especially the dashboard page and the threat list page. Logic set with conditions checking the current_user.role_id is quite repetitive.
+                        </li>
+                        <span class="image main"><img src="../images/reflection_1.png" alt="" /></span>
+                        <span class="image main"><img src="../images/reflection_2.png" alt="" /></span>
+
+                    </p>
+                    <p>
+                        Secure routing
+
+                        <li>
+                            User may type the route directly in the url, which may result in unauthorized users doing restricted actions, accessing private content or typing invalid id
+
+                        </li>
+                        <li>
+                            Throughout the development, it comes up with 1-3 authorization checking functions for most of the routes
+                            <li>
+                                The basic authorization for the user role in accessing the route
+
+                            </li>
+                            <li>The citizen authorization for accessing her/his threat
+                            </li>
+                            <li>Id validator for validating the id passing is actually exist in the table
+                            </li>
+                        </li>
+                    </p>
+                    <p>
+                        Logger class and flash message
+                        <li>
+                            The success and failure functions of the Logger class are used to put in the try and catch respectively for each controller route.
+
+                        </li>
+                        <li>The related action_logger and error_logger tables make the application more secure by recording the users’ usage history and bugs are easier to be traced.
+                        </li>
+                        <li>Even when I was developing the application, the action and error logger tables that have already helped in debugging.
+                        </li>
+                        <li>In order to create an action or error string which is more human-readable storing into the logging tables, two lists which are PATH_ACTION_LIST and PATH_ERROR_LIST are created to refer to the action or error sentences according
+                            to the route as the keys.
+                        </li>
+                    </p>
+
+                    <hr class="major" />
+                    <h4>Test Cases</h4>
+                    <p>Reflection
+                        <li>
+                            While writing the test case, I found it really helps me in finding the bugs and further reflecting on the practices related to security concerns.
+
+                        </li>
+                        <li>
+                            I did find bugs which may be not really easy to be found using manual functional testing.
+
+                        </li>
+                        <li>
+                            Writing the testing case made me feel like implementing the functional test while listing out all the possible situations of the user interacting with the functions.
+
+                        </li>
+                        <li>
+                            For the security improvement found while writing the test cases, I found that the IDs being passed in routing were not implemented with validation.
+
+                        </li>
+                    </p>
+                    <p>
+                        difficulties
+                        <li>
+                            It was quite complicated getting into the testing methods or the way of coding. It was a problem in finding how to mock a logged-in user for the @login_required route and getting the information of the current_user. It was addressed by using the client.session_transaction()
+                            to set the information manually.
+
+                        </li>
+                        <li>
+                            Testing the file upload related routes is quite complicated. I have to use the io.BytesIO() for setting different number of files, size of files and extensions of files.
+
+                        </li>
+                    </p>
+
+                    <hr class="major" />
+                    <h4>Improvements</h4>
+                    <p>better usage of class
+                        <li>
+                            class function
+
+                            <li>
+                                functions of the systems were not performed by function of the class
+
+                            </li>
+                            <li>
+                                instead they were written with lines of code inside each route controller function directly operating with the target object (linked with data in database) but not capsuled in a function of a class
+
+                            </li>
+                            <li>
+                                eg. approver approving new case application
+
+
+                            </li>
+                            <span class="image main"><img src="../images/reflection_3.png" alt="" /></span>
+
+                        </li>
+                        <li>
+                            inheritance
+                            <li>
+                                seldom did the inheritance of class used
+
+                            </li>
+                            <li>
+                                some lines of code may be spared combining the use of more class functions
+
+                            </li>
+                        </li>
+                        <li>
+                            design pattern
+                            <li>
+                                it would be better if some of the design patterns are tried to be used
+
+                            </li>
+                            <li>
+                                eg. factory pattern for function of approver approving new case and end case, making them to share the single entry point
+
+                            </li>
+                        </li>
+                    </p>
+                    <p>
+                        Security
+                        <li>
+                            only the password of personal data was hashed, not the email, firstname, last name.
+
+                        </li>
+                    </p>
+                    <p>
+                        Test case did not cover all scenarios
+                        <li>
+                            especially the downloading functions
+
+                        </li>
+                        <li>
+                            some bugs were found in black box testing due to not being covered by the white box testing which conducted first
+
+                        </li>
+                        <li>all scenarios should be well listed first
+                        </li>
+                    </p>
+                    <p>
+                        Test case did not cover all unit functions
+                        <li>
+                            functions such as those dealing with uploading are coupling with each other
+
+                        </li>
+                        <li>
+                            functions were failed to be separated due to sharing the common variable such as current_user and request
+
+                        </li>
+                        <li>
+                            more investigation should be conducted to decouple them and do write the unit test for each
+
+                        </li>
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">University of Essex<br>Computer Science</span>
+                            <ul>
+                                <li><a href="#">Launching into Computer Science</a></li>
+                                <li><a href="M2_OOIS.html">Object-oriented Information Systems</a></li>
+                                <li><a href="M3_SSDCS.html">Secure Software Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Tecky Academy Projects</span>
+                            <ul>
+                                <li><a href="#">Conway's Game of Life</a></li>
+                                <li><a href="#">Hong Kong Lennon Wall</a></li>
+                                <li><a href="#">Hiking Game Web App</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="generic.html">Compu</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Ante interdum</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button">More</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
