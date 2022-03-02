@@ -310,12 +310,12 @@
                                         let point_detected = new cv.Point(point1_corner.x - box_dimension_x / 3, point1_corner.y + box_dimension_y / 2)
 
                                         // detect correct position for test stripe
-                                        let rect_qr = new cv.Rect(Math.round(point1_corner.x + (1 / 17.7) * box_size * video.videoHeight), Math.round(point1_corner.y + (2.3 / 17.7) * box_size * video.videoHeight), Math.round((3.0 / 17.7) * box_size * video.videoHeight), Math.round((3.0 / 17.7) * box_size * video.videoHeight))
-                                        src_qr = src.roi(rect_qr)
-                                        cv.cvtColor(src_qr, gray_qr, cv.COLOR_BGR2GRAY)
-                                        cv.threshold(gray_qr, thresh_qr, thresh_black, 255, cv.THRESH_BINARY)
-                                        document.getElementById("logger").innerHTML = `${((cv.countNonZero(thresh_qr) / (thresh_qr.cols * thresh_qr.rows)) * 100)}`
-                                        correctPosition1 = (((cv.countNonZero(thresh_qr) / (thresh_qr.cols * thresh_qr.rows)) * 100) < white_percent) ? true : false
+                                        // let rect_qr = new cv.Rect(Math.round(point1_corner.x + (1 / 17.7) * box_size * video.videoHeight), Math.round(point1_corner.y + (2.3 / 17.7) * box_size * video.videoHeight), Math.round((3.0 / 17.7) * box_size * video.videoHeight), Math.round((3.0 / 17.7) * box_size * video.videoHeight))
+                                        // src_qr = src.roi(rect_qr)
+                                        // cv.cvtColor(src_qr, gray_qr, cv.COLOR_BGR2GRAY)
+                                        // cv.threshold(gray_qr, thresh_qr, thresh_black, 255, cv.THRESH_BINARY)
+                                        // document.getElementById("logger").innerHTML = `${((cv.countNonZero(thresh_qr) / (thresh_qr.cols * thresh_qr.rows)) * 100)}`
+                                        // correctPosition1 = (((cv.countNonZero(thresh_qr) / (thresh_qr.cols * thresh_qr.rows)) * 100) < white_percent) ? true : false
                                         let rect_ck1 = new cv.Rect(Math.round(point1_corner.x + (1.5 / 17.7) * box_size * video.videoHeight), Math.round(point1_corner.y + (11.0 / 17.7) * box_size * video.videoHeight), Math.round((2.0 / 17.7) * box_size * video.videoHeight), Math.round((1.0 / 17.7) * box_size * video.videoHeight))
                                         src_ck1 = src.roi(rect_ck1)
                                         cv.cvtColor(src_ck1, gray_ck1, cv.COLOR_BGR2GRAY)
@@ -338,7 +338,8 @@
                                         correctPosition5 = (((cv.countNonZero(thresh_ck4) / (thresh_ck4.cols * thresh_ck4.rows)) * 100) > 90) ? true : false
 
                                         // if position correct
-                                        if (correctPosition1 && correctPosition2 && correctPosition3 && correctPosition4 && correctPosition5) {
+                                        // if (correctPosition1 && correctPosition2 && correctPosition3 && correctPosition4 && correctPosition5) {
+                                        if (correctPosition2 && correctPosition3 && correctPosition4 && correctPosition5) {
                                             document.getElementById("status").classList.add('detected')
                                             document.getElementById("status").innerHTML = `<div style="color:black; font-size: 40px; text-align:center">Test Strip Detected</div>`
 
